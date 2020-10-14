@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/linecons.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='inc/strip/css/strip.css')}}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+    
+    <!-- jQuery Counterup -->
+    {% block js%}
+     <!-- jQuery form CDN -->
+    <script src="{{ url_for('static', filename='js/waypoints.min.js')}}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+    <!-- jQuery sticky -->
+    <script src="{{ url_for('static', filename='js/jquery.sticky.js')}}"></script>
+    <!-- jQuery Strip Lightbox -->
+    <script src="{{ url_for('static', filename='inc/strip/js/strip.pkgd.min.js')}}"></script>
+    <!-- jQuery easing -->
+    <script src="{{ url_for('static', filename='js/jquery.easing.1.3.min.js')}}"></script>
+    <!-- jQuery tweet -->
+    <script src="{{ url_for('static', filename='js/jquery.tweet.min.js')}}"></script>
+    <!-- jQuery owl carousel -->
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <!-- jQuery isotope filder -->
+    <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+     <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+    <!-- WOW Animation -->
+    <script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    {% endblock%}
+    <title> {{ page_title }}</title>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="logo">
+                        <h1><a href="">SmileXls</a></h1>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>                         
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right text-uppercase">
+                            <li class="active"><a href="#slider">首页</a></li>
+                            <li><a href="#about">挂于</a></li>
+                            <li><a href="#our-blog">文章</a></li>
+                            <li><a href="#our-clients">客户</a></li>
+                            <li><a href="#portfolios">投资</a></li>
+                            <li><a href="#team-members">团队</a></li>
+                            <li><a href="#events">事件</a></li>
+                            <li><a href="#footer">联系我们</a></li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </header> <!-- End header -->
+    {% block body%}
+    {% endblock%}
+    <footer id="footer" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="footer-contact">
+                        <h2>SmileXls</h2>
+                        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
+                        
+                        <div class="footer-ct-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><input type="text" placeholder="NAME"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><input type="text" placeholder="EMAIL"></p>
+                                </div>
+                            </div>
+                            <p><input type="text" placeholder="SUBJECT"></p>
+                            <p><textarea name="message" placeholder="MESSAGE" id="message" cols="30" rows="10"></textarea></p>
+                            <p><input type="submit" value="Send"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-md-offset-1 col-sm-4">
+                    <div class="footer-widget">
+                        <h2>链接</h2>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">关于</a></li>
+                            <li><a href="">服务</a></li>
+                            <li><a href="">菜单</a></li>
+                            <li><a href="">工作时间</a></li>
+                            <li><a href="">客服时间</a></li>                               
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4">
+                    <div class="footer-widget">
+                        <h2>friends</h2>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">关于</a></li>
+                            <li><a href="">服务</a></li>
+                            <li><a href="">菜单</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-sm-4">
+                    <div class="footer-widget">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Github</a></li>
+                            <li><a href="">Pinterest</a></li>
+                            <li><a href="">Google Plus</a></li>
+                            <li><a href="">Dribble</a></li>
+                            <li><a href="">Flickr</a></li>                               
+                            <li><a href="">Others</a></li>                               
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-sep"></div>
+                </div>
+                <div class="col-md-7">
+                    <div class="footer-copyright">
+                        <p>One morning, when Gregor Samsa woke from troubled dreams, he found.<br/> © 2015 Your Awesome Company <span class="seprator">|</span> Designed by Hasin <span class="seprator">|</span> Coded with by WP Expand - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-md-5">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="">TERMS</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Job</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- End footer -->
+</body>
+
+</html>
